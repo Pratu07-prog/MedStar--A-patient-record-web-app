@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <title>MedStar</title>
+    <style>
+        body {
+            background-image: url(./doc.jpeg);
+            background-repeat: no-repeat;
+            background-size: 50% 100%;
+            background-position: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#" style="font-family: 'Baloo Bhai 2', cursive; font-size: 25px;">MedStar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container my-4" style="padding-left: 40% !important;">
+        <h2 class="text-center">Patient's Data</h2>
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+        </div>
+
+        <div class="form-group">
+            <label for="contact">Contact</label>
+            <input type="number" class="form-control" id="contact" aria-describedby="emailHelp">
+        </div>
+
+        <div class="form-group">
+            <label for="bg">Blood Group</label>
+            <select id="bg" class="form-control">
+                <option selected> </option>
+                <option>A+</option>
+                <option>AB+</option>
+                <option>B+</option>
+                <option>O+</option>
+                <option>A-</option>
+                <option>B-</option>
+                <option>AB-</option>
+                <option>O-</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="disease">Disease</label>
+            <input type="text" class="form-control" id="disease">
+        </div>
+
+        <div class="form-group">
+            <label for="ward">Ward No.</label>
+            <input type="number" class="form-control" id="ward">
+        </div>
+
+        <button id="add" class="btn btn-primary">Add to list</button>
+        <button id="clear" class="btn btn-primary" onclick="clearStorage()">Clear list</button>
+    </div>
+
+    <div id="items" class="container my-4">
+        <h2>Patient's List</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">SNo</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Contact</th>
+                    <th scope="col">Blood Group</th>
+                    <th scope="col">Disease</th>
+                    <th scope="col">Ward No.</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>8234789012</td>
+                    <td>A+</td>
+                    <td>Covid</td>
+                    <td>2</td>
+                    <td><button class="btn btn-sm btn-primary">Delete</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="/project2.js"></script>
+</body>
+
+</html>
